@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>this is my frist web page</title>
+	<style type="text/css">
+		.container{
+               padding: 0px;
+               background-color: white;
+               padding: 10px;
+               background-color: tomato;
+
+
+		}
+		input[type=text],input[type=password]{
+			width: 100%;
+			padding: 15px;
+			margin: 5px 0 22px;
+			display: inline-block;
+			border: none;
+			background: powderblue;
+		}
+		input[type=text]:focus, input[type=password]:focus{
+			outline: none;
+			background-color: yellow;
+		}
+		hr{
+			border: 1px solid green;
+			margin-bottom: 25px;
+
+		}
+		.say{
+			background-color: green;
+			width: 100%;
+			padding: 15px;
+			font-size: 20px;
+			cursor: pointer;
+			border: none;
+		}
+		.go{
+			text-align: center;
+		}
+		.yes{
+			text-align: center;
+		}
+	</style>
+	<script type="text/javascript">
+		<!--
+           function validation(){
+           	var Email=getElementById('email');
+           	var Password=getElementById('pass');
+
+           	if(Email.value==""){
+           		alert("can't be live empty");
+           		return false;
+           	}
+     
+           	else if(Password.value==""){
+           		alert("can't be live empty");
+           		return false;
+           	}
+           	else{
+                    true;
+           	}
+           }
+		//-->	
+	</script>
+</head>
+<body>
+       <div class="container">
+       	<h1 class="yes">Login Form</h1>
+       </div>
+       <div class="my">
+       	<form onsubmit="return validation()" action="">
+          <hr>
+             <label for="email"><b>Email</b></label><br>
+             <input type="text" placeholder="Enter Email" name="email" required><br><br>
+             <label for="password"><b>Password</b></label><br>
+             <input type="password" placeholder="Enter Password" name="password" required><br><br>
+            <hr> 
+             <button class="say"><b>Submit</b></button>
+       	</form>
+       </div>
+</body>
+</html>
